@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Assignment</title>
+</head>
+<body>
+    <h1>Hello !!! Welcome to this page</h1>
+    
+<script type="text/javascript">
+
+    var bgcolor = new Array("blue","yellow","red","white","pink","green","violet")
+   
+
+    function color(){
+        document.body.style.background = bgcolor[Math.floor(Math.random()*bgcolor.length)]    
+    }
+    setInterval(color,1000);
+
+</script>
+
+</body>
+</html>

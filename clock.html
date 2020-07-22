@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Assignment</title>
+    <style type="text/css">
+        .black
+        {
+            background-color: black;
+        }
+    </style>
+</head>
+<body id="dark">
+
+    <h1>Present Time :  </h1>
+    <h2 id="time"></h2>
+
+    <h3 id="title"></h3>
+
+    <button id="dm">Dark mode</button>
+
+    <script type="text/javascript">
+        const ctime = document.getElementById('time');
+
+
+        function clock(){
+        let date = new Date();
+        let time = date.toLocaleTimeString();
+        ctime.innerText = time;
+        }
+        setInterval(clock,1000);
+
+        const name = prompt("Enter your name : ");
+
+        title.innerText += `Hello! Welcome to this page ${name}`;
+
+        const dmode = document.getElementById('dm');
+
+        dmode.onclick = function changeColor(){
+    
+        dark.classList.toggle('black');
+        document.body.style.color = 'blue';
+        
+   
+        }
+
+
+    </script>
+    
+</body>
+</html>
